@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "server",
+    "client-bevy",
+    "bevy_spacetimedb_server",
+    "bevy_spacetimedb",
+]

@@ -1,0 +1,13 @@
+[package]
+name = "bevy_spacetimedb"
+description = "USe SpacetimeDB in your Bevy application"
+repository = "https://github.com/JulienLavocat/bevy_spacetimedb"
+readme = "README.md"
+version = "0.2.2"
+edition = "2024"
+license = "Apache-2.0"
+
+
+[dependencies]
+spacetimedb-sdk = "1.0.1"
+bevy = { version = "0.16.0-rc.4", features = ["std"]}

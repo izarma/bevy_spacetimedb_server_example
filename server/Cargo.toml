@@ -1,0 +1,20 @@
+[package]
+name = "spacetime-module"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+spacetimedb = "1.0.1"
+log = "0.4"
+# Add back deps needed for App static storage
+bevy = { version = "0.16.0-rc.4", default-features = false, features = ["default_no_std"] } # Need App type
+once_cell = "1.19"
+rand = { version = "0.8", default-features = false, features = ["alloc"] } # Re-add rand for RngCore
+spin = "0.9" # Add spin for Mutex
+
+bevy_spacetimedb_server = { path = "../bevy_spacetimedb_server" }

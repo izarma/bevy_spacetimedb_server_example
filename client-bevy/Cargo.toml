@@ -1,0 +1,10 @@
+[package]
+name = "client-bevy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.16.0-rc.4", features = ["std"]}
+# bevy_rapier3d = { version = "0.29.0", features = ["debug-render-3d","enhanced-determinism"] }
+spacetimedb-sdk = "1.0.1"
+bevy_spacetimedb = { path = "../bevy_spacetimedb" }
